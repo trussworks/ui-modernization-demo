@@ -27,7 +27,7 @@
     "@uswds/uswds": "3.5.0",
     "babel-jest": "^29.5.0",
     "classnames": "^2.3.2",
-    "countries-list": "^2.6.1",
+    "countries-list": "^3.0.0",
     "css-loader": "^6.7.3",
     "eslint": "^8.38.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
