@@ -35,7 +35,7 @@ jobs:
         run: yarn build-storybook
 
       - name: Upload storybook
-        uses: actions/upload-pages-artifact@84bb4cd4b733d5c320c9c9cfbc354937524f4d64 # v1
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: ./storybook-static
 
