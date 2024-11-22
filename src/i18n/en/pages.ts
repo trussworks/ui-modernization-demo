@@ -1,4 +1,8 @@
 export default {
+  global: {
+    domain: '{TO_DO_YOUR_DOMAIN_HERE}',
+    stateOrTerritory: '{TO_DO_YOUR_STATE_OR_TERRITORY_HERE}',
+  },
   claimStatus: {
     header: "We're reviewing your claim",
     success: 'Application submitted',
@@ -6,7 +10,7 @@ export default {
     review:
       "We are reviewing your application information to make sure you're eligible for benefits payments.",
     certify:
-      "You’ll need to certify each week to continue receiving benefits. Each time you certify, you should receive payment within a week.",
+      'You’ll need to certify each week to continue receiving benefits. Each time you certify, you should receive payment within a week.',
     potentialBenefits: {
       header: 'Potential benefits remaining',
       context: '(<0></0> paid so far)',
@@ -48,7 +52,7 @@ export default {
     },
     hasDriversLicenseOrStateId: {
       label:
-        "Do you have a driver's license or government issued ID for {TODO_YOUR_STATE_OR_TERRITORY_HERE}?",
+        "Do you have a driver's license or government issued ID for $t(global.stateOrTerritory)?",
       errors: {
         required:
           "You must answer whether you have a driver's license or state ID",

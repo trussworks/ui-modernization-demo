@@ -4,7 +4,7 @@ export default {
       flagImg: {
         alt: 'U.S. flag',
       },
-      text: 'This is an official website of {TODO_YOUR_STATE_OR_TERRITORY_HERE}',
+      text: 'This is an official website of $t(pages:global.stateOrTerritory)',
       actionText: "Here's how you know",
     },
     content: {
@@ -38,15 +38,14 @@ export default {
   footer: {
     returnTop: 'Return to top',
     identifierAria: 'Agency identifier',
-    official:
-      'An official website of <0>{TODO_YOUR_STATE_OR_TERRITORY_HERE}</0>',
+    official: 'An official website of <0>$t(pages:global.stateOrTerritory)</0>',
     links: 'Important links',
     link1: 'Link 1',
     link2: 'Link 2',
     link3: 'Link 3',
     home: 'Home',
     govAria: 'U.S. government information and services',
-    copyright: 'Copyright © 2023 {TODO_YOUR_STATE_OR_TERRITORY_HERE}',
+    copyright: 'Copyright © 2023 $t(pages:global.stateOrTerritory)',
   },
   header: {
     title: 'Unemployment Insurance Benefits',

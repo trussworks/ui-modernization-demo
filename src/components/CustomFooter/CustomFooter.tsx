@@ -16,7 +16,7 @@ import { Trans, useTranslation } from 'react-i18next'
 
 export const CustomFooter = () => {
   const { t } = useTranslation('components', { keyPrefix: 'footer' })
-
+  const { t: tPages } = useTranslation('pages', { keyPrefix: 'global' })
   return (
     <footer role="contentinfo">
       <GridContainer className="usa-footer__return-to-top">
@@ -30,13 +30,13 @@ export const CustomFooter = () => {
               <Icon.Home className="text-white" size={5} />
             </IdentifierLogo>
           </IdentifierLogos>
-          <IdentifierIdentity domain="{TO_DO_YOUR_DOMAIN_HERE}">
+          <IdentifierIdentity domain={tPages('domain')}>
             <Trans
               t={t}
               i18nKey="official"
               components={[
                 <Link key="official" href="/">
-                  {'{TO_DO_YOUR_STATE_OR_TERRITORY_HERE}'}
+                  {tPages('stateOrTerritory')}
                 </Link>,
               ]}
             />
